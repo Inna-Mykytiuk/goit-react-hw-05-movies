@@ -3,8 +3,10 @@ import styled from 'styled-components';
 
 export const MovieCardContainer = styled.div`
   display: flex;
+  /* flex-wrap: wrap; */
   gap: 40px;
   margin-top: 20px;
+  width: 80%;
 
   background: rgba(110, 110, 110, 0.25);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 32px 0px;
@@ -12,7 +14,13 @@ export const MovieCardContainer = styled.div`
   padding: 30px;
 `;
 
-export const Img = styled.img``;
+export const Img = styled.img`
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 400px;
+`;
 
 export const MovieInfo = styled.div`
   padding-top: 20px;
@@ -46,7 +54,7 @@ export const MovieInfoTextBold = styled.span`
   display: block;
   margin-bottom: 20px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
 `;
 
 export const MoreInfoWrapper = styled.div`
@@ -59,6 +67,7 @@ export const MoreInfoWrapper = styled.div`
   padding-bottom: 20px;
   border-top: 1px solid #e4c3ad;
   border-bottom: 1px solid #e4c3ad;
+  width: 100%;
 `;
 
 export const MoreInfoHeader = styled.h3`
@@ -66,9 +75,7 @@ export const MoreInfoHeader = styled.h3`
   font-weight: 700;
 
   color: #e4c3ad;
-  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
-    rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  margin: 0;
+
   text-shadow: 0 0 15px #eb9486;
   margin-bottom: 20px;
 `;

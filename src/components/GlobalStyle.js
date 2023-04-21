@@ -58,7 +58,7 @@ section {
 
 img {
   display: block;
-    ${'' /* width: 100%; */}
+    width: 100%;
     object-fit: cover;
     object-position: center center;
 }

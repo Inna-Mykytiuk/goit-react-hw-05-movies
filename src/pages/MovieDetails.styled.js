@@ -2,6 +2,11 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   padding: 20px 40px;
 `;
 
@@ -28,6 +33,7 @@ export const Button = styled.button`
   transition: all 0.2s ease-in-out, background-color 0.2s ease-in-out;
   text-decoration: none;
   color: #e4c3ad;
+  margin-top: 30px;
 
   &:hover,
   &:focus {

@@ -7,6 +7,7 @@ import {
   CastList,
   CastListItem,
   CastName,
+  CastImg,
   NoCastText,
   Wrapper,
 } from './Cast.styled';
@@ -37,12 +38,12 @@ const Cast = () => {
           {cast.map(actor => (
             <CastListItem className="cast-card" key={actor.id}>
               {actor.profile_path ? (
-                <img
+                <CastImg
                   src={`https://image.tmdb.org/t/p/w200${actor.profile_path}`}
                   alt={`${actor.name} profile`}
                 />
               ) : (
-                <img
+                <CastImg
                   src={`https://via.placeholder.com/200x300?text=No+Image`}
                   alt={`${actor.name} profile`}
                 />
