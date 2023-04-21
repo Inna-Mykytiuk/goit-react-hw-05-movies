@@ -1,10 +1,30 @@
-// import { useState, useEffect } from 'react';
-import 'react-toastify/dist/ReactToastify.css';
-import { AppStyled } from './App.styled';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { lazy } from 'react';
+import { Toaster } from 'react-hot-toast';
 
-// import { fetchImages } from '../utils/service';
-// import { Dna } from 'react-loader-spinner';
+const SharedLayout = lazy(() => import('./SharedLayout/SharedLayout'));
+const Home = lazy(() => import('../pages/Home'));
+const Movies = lazy(() => import('../pages/Movies'));
+const MovieDetails = lazy(() => import('../pages/MovieDetails'));
+const Cast = lazy(() => import('./Cast/Cast'));
+const Reviews = lazy(() => import('./Reviews/Reviews'));
 
 export const App = () => {
-  return <AppStyled></AppStyled>;
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
+          <Route path="movies" element={<Movies />} />
+
+          <Route path="movies/:movieId" element={<MovieDetails />}>
+            <Route path="cast" element={<Cast />} />
+            <Route path="reviews" element={<Reviews />} />
+          </Route>
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
+      </Routes>
+      <Toaster />
+    </>
+  );
 };

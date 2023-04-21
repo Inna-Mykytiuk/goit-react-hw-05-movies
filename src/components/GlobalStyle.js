@@ -4,11 +4,23 @@ import 'modern-normalize';
 export const GlobalStyle = createGlobalStyle`
   body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  ${
+    '' /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
+  }
+    font-family: -apple-system,BlinkMacSystemFont, 'Playfair Display', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: url(https://images.unsplash.com/photo-1505775561242-727b7fba20f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   min-height: 100vh;
   letter-spacing: 0.02em;
@@ -17,22 +29,16 @@ export const GlobalStyle = createGlobalStyle`
   overflow-x: hidden;
   margin: 0 auto;
   transition: 1.5s;
-  background-color: #d9dae0;
+
 }
 
 main {
-  font-family: 'Playfair Display', serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   ${'' /* min-height: 100vh; */}
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 body::-webkit-scrollbar {
@@ -47,6 +53,7 @@ body::-webkit-scrollbar-thumb {
 }
 section {
   margin-top: 50px;
+  text-align: center;
 }
 
 img {
@@ -55,7 +62,9 @@ img {
     object-fit: cover;
     object-position: center center;
 }
-ul {
+
+ul{
   list-style: none;
+
 }
 `;
