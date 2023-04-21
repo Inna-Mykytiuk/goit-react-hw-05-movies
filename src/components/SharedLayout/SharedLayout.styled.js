@@ -29,6 +29,7 @@ export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   transition: color 0.2s ease-in-out;
   color: #e4c3ad;
+  cursor: pointer;
 
   &:not(:last-child) {
     margin-right: 40px;

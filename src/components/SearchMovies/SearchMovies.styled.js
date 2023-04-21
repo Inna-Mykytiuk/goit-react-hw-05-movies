@@ -46,13 +46,9 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  /* position: absolute; */
-  /* bottom: 10px; */
-  /* right: 10px; */
   background-color: transparent;
   border: none;
 
-  /* padding: 8px 18px; */
   font-size: 16px;
   cursor: pointer;
   transition: all 0.2s ease-in-out, color 0.2s ease-in-out;

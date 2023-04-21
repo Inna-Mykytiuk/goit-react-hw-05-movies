@@ -13,6 +13,7 @@ export const Container = styled.div`
 export const StyledLink = styled(Link)`
   font-size: 20px;
   color: #e4c3ad;
+  cursor: pointer;
 
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -34,6 +35,7 @@ export const Button = styled.button`
   text-decoration: none;
   color: #e4c3ad;
   margin-top: 30px;
+  cursor: pointer;
 
   &:hover,
   &:focus {

@@ -64,6 +64,7 @@ export const StyledLink = styled(Link)`
     rgba(0, 0, 0, 0.5) 1px 1px 1px;
 
   color: #e4c3ad;
+  cursor: pointer;
 
   &:hover,
   &:focus {

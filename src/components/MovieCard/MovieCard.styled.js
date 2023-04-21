@@ -112,6 +112,7 @@ export const StyledLink = styled(Link)`
   transition: all 0.2s ease-in-out, background-color 0.2s ease-in-out;
   text-decoration: none;
   color: #e4c3ad;
+  cursor: pointer;
 
   &:hover,
   &:focus {
