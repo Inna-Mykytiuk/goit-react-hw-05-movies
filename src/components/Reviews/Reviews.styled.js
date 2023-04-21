@@ -67,4 +67,12 @@ export const NoReviewsText = styled.p`
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   max-width: 500px;
+  color: #e4c3ad;
+  font-size: 16px;
+
+  background: rgba(110, 110, 110, 0.25);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 `;
