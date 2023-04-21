@@ -7,7 +7,7 @@ export const Container = styled.div`
 
 export const StyledLink = styled(Link)`
   font-size: 20px;
-  color: #000;
+  color: #e4c3ad;
 
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -19,17 +19,21 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   font-size: 16px;
-  border: none;
+
+  border: 1px solid #e4c3ad;
   border-radius: 4px;
   padding: 5px;
   background-color: #e4c3ad;
+  background-color: transparent;
   transition: all 0.2s ease-in-out, background-color 0.2s ease-in-out;
   text-decoration: none;
+  color: #e4c3ad;
 
   &:hover,
   &:focus {
     background-color: #eb9486;
     color: #ffffff;
     box-shadow: 0 0 15px #eb9486;
+    border: 1px solid #eb9486;
   }
 `;
