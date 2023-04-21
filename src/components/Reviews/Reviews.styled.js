@@ -32,6 +32,10 @@ export const ReviewList = styled.ul`
 export const ReviewListItem = styled.li`
   padding-bottom: 10px;
   border-bottom: 1px solid #e4c3ad;
+  background: rgba(110, 110, 110, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 32px 0px;
+  backdrop-filter: blur(10px);
+  padding: 15px;
 `;
 
 export const Author = styled.h4`
