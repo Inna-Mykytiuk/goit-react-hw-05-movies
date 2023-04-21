@@ -13,23 +13,11 @@ export const CastHeader = styled.h3`
   font-weight: 700;
 
   color: #e4c3ad;
-  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
-    rgba(0, 0, 0, 0.5) 1px 1px 1px;
-  margin: 0;
   text-shadow: 0 0 15px #eb9486;
   margin-bottom: 20px;
 `;
 
 export const CastList = styled.ul`
-  /* margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  padding: 0; */
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -104,7 +92,7 @@ export const CastImg = styled.img`
 
   display: block;
   width: 100%;
-  height: 350px;
+  /* height: 350px; */
   object-fit: cover;
   object-position: center;
 `;

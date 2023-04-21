@@ -1,16 +1,24 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
   padding-right: 40px;
   padding-left: 40px;
   padding-bottom: 40px;
+  margin: 0 auto;
 `;
 
 export const ReviewHeader = styled.h3`
-  font-size: 25px;
-  font-weight: 500;
-  text-align: center;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #e4c3ad;
+  text-shadow: 0 0 15px #eb9486;
+  margin-bottom: 20px;
+  margin: 0 auto;
 `;
 
 export const ReviewList = styled.ul`
@@ -23,17 +31,28 @@ export const ReviewList = styled.ul`
 
 export const ReviewListItem = styled.li`
   padding-bottom: 10px;
-  border-bottom: 1px solid #d3d3d3;
+  border-bottom: 1px solid #e4c3ad;
 `;
 
 export const Author = styled.h4`
-  margin-bottom: 10px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
+  margin-top: 20px;
+  max-width: 220px;
+  color: #e4c3ad;
+  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+    rgba(0, 0, 0, 0.5) 1px 1px 1px;
 `;
 
 export const Review = styled.p`
-  line-height: 1.3;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+
+  color: #e4c3ad;
+  text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px,
+    rgba(0, 0, 0, 0.5) 1px 1px 1px;
+  margin: 0 auto;
 `;
 
 export const NoReviewsText = styled.p`
