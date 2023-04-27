@@ -34,8 +34,6 @@ export const CastListItem = styled.li`
   width: 320px;
   height: 500px; */
 
-  background: rgba(110, 110, 110, 0.25);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 32px 0px;
   backdrop-filter: blur(10px);
   padding: 10px;
   text-align: center;
@@ -44,7 +42,7 @@ export const CastListItem = styled.li`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
+  width: 250px;
   background-color: #fff;
   transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 18px;
